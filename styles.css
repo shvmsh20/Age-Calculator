@@ -5,7 +5,7 @@
 }
 
 :root {
-  --primary-color: #94d0cc;
+  --primary-color: #8fd6e1;
   --secondary-color: #1b1a17;
   --ternary-color: #02475e;
 }
@@ -37,13 +37,16 @@ body {
   padding: 10px 20px;
 }
 .input-bar #date {
+  display: inline-block;
   height: 50px;
   flex-basis: 50%;
   padding: 0 15px;
   font-size: 1.1rem;
-  letter-spacing: 0.3rem;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 .input-bar #btn {
   flex-basis: 30%;
@@ -141,7 +144,7 @@ body {
     padding: 5px;
   }
   .input-bar #date {
-    flex-basis: 55%;
+    width: 55%;
     padding: 0px 10px;
     font-size: 1rem;
     letter-spacing: 0rem;

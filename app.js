@@ -23,9 +23,13 @@ btn.addEventListener("click",()=>{
 
 function  calOfAge(b_year, b_month, b_day, t_year, t_month, t_day){
     //validation 
-    if((b_year>t_year) || (b_year==t_year && b_month>t_month) || (b_year==t_year && b_month==t_month && b_day>t_day)){
+    if(dob.value===''){
+        alert('Please enter DOB');
+    }
+    else if((b_year>t_year) || (b_year==t_year && b_month>t_month) || (b_year==t_year && b_month==t_month && b_day>t_day)){
         alert("Invalid details");
-    }else{
+    }
+    else{
         
         var month=[31,28,31,30,31,30,31,31,30,31,30,31];
         var years,months,days;
@@ -44,10 +48,10 @@ function  calOfAge(b_year, b_month, b_day, t_year, t_month, t_day){
             months=t_month-b_month;
         }
         years=t_year-b_year;
+        output_years.textContent=years;
+        output_months.textContent=months;
+        output_days.textContent=days;
     }
-    output_years.textContent=years;
-    output_months.textContent=months;
-    output_days.textContent=days;
     
  }
 
