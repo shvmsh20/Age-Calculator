@@ -37,12 +37,15 @@ body {
   padding: 10px 20px;
 }
 .input-bar #date {
-  display: inline-block;
+  text-align: center;
+  display: flex;
   height: 50px;
+  justify-content: center;
+  align-items: center;
   flex-basis: 50%;
   padding: 0 15px;
   font-size: 1.1rem;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0.1rem;
   border: none;
   border-radius: 10px;
